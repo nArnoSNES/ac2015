@@ -48,7 +48,7 @@ u16 getCollisionTile2(u16 x, u16 y) {
 //---------------------------------------------------------------------
 typedef struct
 {
-    	short x, y;
+	short x, y;
 	int gfx_frame;
 	int state;
 	int anim_frame;

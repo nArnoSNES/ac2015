@@ -5,9 +5,7 @@
 
 ---------------------------------------------------------------------------------*/
 #include <snes.h>
-
 #include "soundbank.h"
-extern char __SOUNDBANK__0;
 
 extern char pattilekawaii, pattilekawaii_end;
 extern char maptilekawaii, maptilekawaii_end;
