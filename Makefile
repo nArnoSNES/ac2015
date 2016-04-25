@@ -1,15 +1,12 @@
-# path to snesdev root directory (for emulators, devkitsnes, libsnes)
-export DEVKITSNES := $(HOME)/snesdev
-
-# path to devkitsnes root directory for compiler
-export DEVKIT65XX := $(HOME)/snesdev/devkitsnes
-
 #---------------------------------------------------------------------------------
 .SUFFIXES:
 #---------------------------------------------------------------------------------
 
 ifeq ($(strip $(DEVKIT65XX)),)
-$(error "Please set DEVKIT65XX in your environment. export DEVKIT65XX=<path to>devkit65XX")
+# path to snesdev root directory (for emulators, devkitsnes, libsnes)
+export DEVKITSNES := $(HOME)/snesdev
+# path to devkitsnes root directory for compiler
+export DEVKIT65XX := $(HOME)/snesdev/devkitsnes
 endif
 
 include $(DEVKIT65XX)/snes_rules
